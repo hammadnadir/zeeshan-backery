@@ -89,6 +89,7 @@ body {
   .landing h1,
   .landing p {
     margin: 25px;
+    margin-top: 0px !important;
   }
 
   .countdown {
