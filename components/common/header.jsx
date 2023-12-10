@@ -1,16 +1,23 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React, { useState } from 'react';
+import { useMediaQuery } from 'react-responsive';
 
 function Header() {
     const router = useRouter();
     const [showMenu, setShowMenu] = useState(false);
 
+    const isBigScreen = useMediaQuery({ query: '(min-width: 991px)' })
+    const isRetina = useMediaQuery({ query: '(max-width: 991px)' })
+
     return (
-        <nav className="navbar navbar-expand-lg fixed-top py-lg-0 px-lg-5 wow fadeIn bg-dark" data-wow-delay="0.1s">
+        <nav className={`navbar navbar-expand-lg fixed-top py-lg-0 px-lg-5 wow fadeIn ${isBigScreen ? `bg-dark` : `bg-white`}`} data-wow-delay="0.1s">
             <Link href="/">
                 <span className="navbar-brand ms-4 ms-lg-0" style={{ lineHeight: 1, paddingBottom: "0px" }}>
-                    <h1 className="text-primary m-0 flex items-center"><img style={{ width: "150px" }} src="https://www.logomaker.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kh...OGrxFHnR...OwXs1M3EMoAJtlikoh...Zi9...o7" alt="" /></h1>
+                    <h3 className="text-primary m-0 flex items-center uppercase">
+                        {/* <img style={{ width: "150px" }} src="https://www.logomaker.com/api/main/images/1j+ojFVDOMkX9Wytexe43D6kh...OGrxFHnR...OwXs1M3EMoAJtlikoh...Zi9...o7" alt="" /> */}
+                        Bites and Crafters
+                    </h3>
                 </span>
             </Link>
             <button

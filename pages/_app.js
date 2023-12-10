@@ -7,6 +7,9 @@ import "slick-carousel/slick/slick-theme.css";
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 import { useEffect, useState } from "react";
 import 'react-toastify/dist/ReactToastify.css';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Topbar from "@/components/common/topbar";
 
 function App({ Component, pageProps }) {
   const [isSSR, setIsSSR] = useState(true);
@@ -39,6 +42,7 @@ function App({ Component, pageProps }) {
         pauseOnHover
         theme="light"
       />
+      
       <Component {...pageProps} />
     </>
   );

@@ -1,4 +1,5 @@
 import { Footer, Header } from '@/components/common'
+import MapSection from '@/components/common/map'
 import Contact from '@/components/contact'
 import Head from 'next/head'
 import React from 'react'
@@ -16,6 +17,7 @@ function ContactUs() {
       <main style={{paddingTop: "40px"}}>
         <Header />
         <Contact />
+        <MapSection />
         <Footer />
       </main>
     </div>
