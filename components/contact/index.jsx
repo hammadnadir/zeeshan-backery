@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 function Contact() {
   const fields = {
@@ -28,13 +28,13 @@ function Contact() {
       err.name = "Required"
     }
     if (!data.email) {
-      err.name = "Required"
+      err.email = "Required"
     }
     if (!data.subject) {
-      err.name = "Required"
+      err.subject = "Required"
     }
     if (!data.message) {
-      err.name = "Required"
+      err.message = "Required"
     }
     if (Object.keys(err).length > 0) {
       setError(err)

@@ -8,7 +8,6 @@ function Header() {
     const [showMenu, setShowMenu] = useState(false);
 
     const isBigScreen = useMediaQuery({ query: '(min-width: 991px)' })
-    const isRetina = useMediaQuery({ query: '(max-width: 991px)' })
 
     return (
         <nav className={`navbar navbar-expand-lg fixed-top py-lg-0 px-lg-5 wow fadeIn ${isBigScreen ? `bg-dark` : `bg-white`}`} data-wow-delay="0.1s">
