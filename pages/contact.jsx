@@ -15,7 +15,7 @@ function ContactUs() {
         {/* <link rel="icon" href="/favicon.png" /> */}
       </Head>
       <main style={{paddingTop: "40px"}}>
-        <Header />
+        {/* <Header /> */}
         <Contact />
         <MapSection />
         <Footer />

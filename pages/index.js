@@ -16,8 +16,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main style={{ paddingTop: "40px" }}>
-        <Topbar />
-        <Header />
+        {/* <Topbar /> */}
+        {/* <Header /> */}
         <Banner />
         <Featured />
         <Categories />

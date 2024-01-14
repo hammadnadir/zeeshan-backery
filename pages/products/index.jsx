@@ -15,7 +15,7 @@ function Product() {
           
       </Head>
       <main style={{paddingTop: "100px"}}>
-        <Header />
+        {/* <Header /> */}
         <Details />
         <Footer />
       </main>

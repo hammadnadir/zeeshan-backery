@@ -16,7 +16,7 @@ function Service_page() {
        
       </Head>
       <main style={{paddingTop: "100px"}}>
-        <Header />
+        {/* <Header /> */}
         <Service />
         <Footer />
       </main>

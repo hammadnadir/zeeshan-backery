@@ -13,7 +13,7 @@ function AboutUs() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main style={{paddingTop: "100px"}}>
-        <Header />
+        {/* <Header /> */}
         <About />
         <Footer />
       </main>

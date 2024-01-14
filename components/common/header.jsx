@@ -26,7 +26,8 @@ function Header() {
                 data-bs-target="#navbarCollapse"
                 onClick={() => setShowMenu(!showMenu)}
             >
-                <span className="navbar-toggler-icon"></span>
+                <img className="navbar-toggler-icon" src="/img/hamburger.png" alt="" />
+                {/* <span className="navbar-toggler-icon"></span> */}
             </button>
             <div className={`collapse navbar-collapse ${showMenu ? 'show' : ''}`} id="navbarCollapse">
                 <div className="navbar-nav mx-auto p-4 p-lg-0">

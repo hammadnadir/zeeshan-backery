@@ -10,6 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // import 'owl.carousel/dist/assets/owl.carousel.css';
 // import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Topbar from "@/components/common/topbar";
+import { Header } from "@/components/common";
 
 function App({ Component, pageProps }) {
   const [isSSR, setIsSSR] = useState(true);
@@ -42,7 +43,7 @@ function App({ Component, pageProps }) {
         pauseOnHover
         theme="light"
       />
-      
+      <Header />
       <Component {...pageProps} />
     </>
   );
